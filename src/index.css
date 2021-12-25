@@ -1,3 +1,102 @@
 @import 'tailwindcss/dist/base.css';
 @import 'tailwindcss/dist/components.css';
 @import 'tailwindcss/dist/utilities.css';
+
+
+img {
+    transition: 1s;
+    transition-timing-function: cubic-bezier(0.2, 0.4, 0.7, 0.8);
+}
+
+.img-wrapper {
+    transition: 0.4s;
+    transition-timing-function: cubic-bezier(0.2, 0.4, 0.7, 0.8);
+}
+
+.css-button-arrow--rose {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    overflow: hidden;
+    border-radius: 5px;
+    border: none;
+    background-color: #ff6392;
+    margin: 20px;
+  }
+  .css-button-arrow--rose:hover {
+    border-radius: 5px;
+    padding-right: 24px;
+    padding-left:8px;
+  }
+  .css-button-arrow--rose:hover:after {
+    opacity: 1;
+    right: 10px;
+  }
+  .css-button-arrow--rose:after {
+    content: "\00BB";
+    position: absolute;
+    opacity: 0;
+    font-size: 20px;
+    line-height: 40px;
+    top: 0;
+    right: -20px;
+    transition: 0.4s;
+  }
+
+
+  .css-button-sliding-to-left--red {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    z-index: 0;
+    background: #fff;
+    overflow: hidden;
+    border: 2px solid #d90429;
+    color: #d90429;
+    margin: 20px;
+  }
+  .css-button-sliding-to-left--red:hover {
+    color: #fff;
+  }
+  .css-button-sliding-to-left--red:hover:after {
+    width: 100%;
+  }
+  .css-button-sliding-to-left--red:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    transition: all 0.3s ease;
+    right: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: #d90429;
+  }
+
+  footer {
+    position:absolute;
+    height:50px;
+    line-height:50px;
+    color:rgb(172, 170, 170);
+    text-align:center;
+    left:0;
+    width:100%;
+  }
+  footer.bottom {
+    bottom:0;
+    }
